@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class exercise2 {
 
     public static void main(String[] args) {
+        //palgatõusu arvutamine massiivi puhul
         int[] palgad = {947, 1963, 2000, 850, 650, 1000, 708};
 
         for (int i = 0; i < palgad.length; i++) {
@@ -14,6 +15,7 @@ public class exercise2 {
             }
         }
 
+        //palgatõusu arvutamine user inputi puhul
         Scanner scan = new Scanner (System.in);
         System.out.println("Mis on su palk?");
         int palk = scan.nextInt();
