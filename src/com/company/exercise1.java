@@ -1,10 +1,14 @@
 //ülesanne 1 - kujundid
 package com.company;
 
+import java.util.Scanner;
+
 public class exercise1 {
 
     public static void main(String[] args) {
-        int r = 3;  //määrab ringi raadiuse
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Sisesta ringi raadius: ");
+        int r = scanner.nextInt(); //määrab ringi raadiuse
         int a = 2 * r; //määrab ruudu külje pikkuse
 
         int ruudu_pindala = a * a;

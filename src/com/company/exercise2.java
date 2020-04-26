@@ -1,6 +1,8 @@
 //ülesanne 2 - palgatõus
 package com.company;
 
+import java.util.Scanner;
+
 public class exercise2 {
 
     public static void main(String[] args) {
@@ -10,6 +12,17 @@ public class exercise2 {
             if (palgad[i] < 1000) {
                 System.out.println("Sinu uueks palgaks on " + palgad[i] * 1.05 + " eurot!");
             }
+        }
+
+        Scanner scan = new Scanner (System.in);
+        System.out.println("Mis on su palk?");
+        int palk = scan.nextInt();
+
+        if (palk < 1000) {
+            double raise = palk * 1.05;
+            System.out.println("Sinu uueks palgaks on " + raise + " eurot!");
+        } else {
+            System.out.println("Sina palgatõusu ei saa!");
         }
     }
 }
