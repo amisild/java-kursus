@@ -38,7 +38,7 @@ public class Aine {
         this.ainepunktideArv = ainepunktideArv;
     }
 
-    @Override  //laps teab kõike oma vanemast, aga vanem ei tea midagi lapsest
+    @Override
     public String toString() {
         return "aine{" +
                 "kood='" + kood + '\'' +
