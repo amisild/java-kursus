@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class homework03 {
+public class Homework03 {
 
     public static void main(String[] args) {
         List<List<String>> fail = filereader();
