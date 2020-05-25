@@ -23,25 +23,26 @@ public class Homework02 {
             if (guess.equals("q")) {
                 System.out.println("You lost $" + moneylost + " . Thanks for playing. Come again!");
                 break;
-            } int numberguess = Integer.valueOf(guess);
-                if (numberguess == numberToGuess) {
-                    System.out.println("YOU WIN!");
-                    isWon = true;
-                } else {
-                    System.out.println("Sorry, good guess, but not quite right. Do you want me to give you a hint (y/n)?");
-                    guess = scanner.nextLine();
+            }
+            int numberguess = Integer.valueOf(guess);
+            if (numberguess == numberToGuess) {
+                System.out.println("YOU WIN!");
+                isWon = true;
+            } else {
+                System.out.println("Sorry, good guess, but not quite right. Do you want me to give you a hint (y/n)?");
+                guess = scanner.nextLine();
 
-                    if (guess.equals("y")) {
-                        moneylost = moneylost + 2;
-                        if (numberguess < numberToGuess) {
-                            System.out.println("Insert $2.00 for the hint!");
-                            System.out.println("Your number is too low!");
-                        } else {
-                            System.out.println("Insert $2.00 for the hint!");
-                            System.out.println("Your number is too high!");
-                        }
+                if (guess.equals("y")) {
+                    moneylost = moneylost + 2;
+                    if (numberguess < numberToGuess) {
+                        System.out.println("Insert $2.00 for the hint!");
+                        System.out.println("Your number is too low!");
+                    } else {
+                        System.out.println("Insert $2.00 for the hint!");
+                        System.out.println("Your number is too high!");
                     }
                 }
+            }
 
         }
     }

@@ -28,7 +28,7 @@ public class Homework03 {
                 if (Integer.valueOf(andmed.get(i)) > maksimaalneTemperatuur) {
                     maksimaalneTemperatuur = Integer.valueOf(andmed.get(i));
 
-                }else if (Integer.valueOf(andmed.get(i)) < minimaalneTemperatuur) {
+                } else if (Integer.valueOf(andmed.get(i)) < minimaalneTemperatuur) {
                     minimaalneTemperatuur = Integer.valueOf(andmed.get(i));
                 }
             }
