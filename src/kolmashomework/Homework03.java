@@ -1,4 +1,3 @@
-
 package kolmashomework;
 
 import java.io.File;
